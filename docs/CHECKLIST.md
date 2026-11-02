@@ -23,16 +23,16 @@
 - [x] Save as supabase/04_seed_fake_data.sql
 
 ## Step 4: Test privacy
-- [ ] Parent A sees only their child's assignments
-- [ ] Parent B sees only their child's assignments
-- [ ] Teacher sees only their own classes
-- [ ] Unshared assignment hidden from parents
-- [ ] Fix any leaks before moving on
+- [x] Parent A sees only their child's assignments
+- [x] Parent B sees only their child's assignments
+- [x] Teacher sees only their own classes
+- [x] Unshared assignment hidden from parents
+- [x] Fix any leaks before moving on
 
 ## Step 5: Teacher page
-- [ ] Login with Supabase Auth
-- [ ] Create assignment form (title, type, due date, share toggle)
-- [ ] List this week's assignments
+- [x] Login with Supabase Auth
+- [x] Create assignment form (title, type, due date, share toggle)
+- [x] List this week's assignments
 
 ## Step 6: Parent page
 - [ ] Parent login
