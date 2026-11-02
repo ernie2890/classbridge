@@ -1,3 +1,4 @@
+from classbridge.notifications import notify_new_assignment
 from datetime import date, timedelta
 
 import streamlit as st
@@ -32,7 +33,7 @@ if submitted:
     if not title.strip():
         st.error("Please enter a title.")
     else:
-        client.table("assignments").insert({
+        res = client.table("assignments").insert({
             "class_id": class_id,
             "title": title.strip(),
             "type": kind,
@@ -40,6 +41,14 @@ if submitted:
             "shared_with_parents": share,
         }).execute()
         st.success("Assignment created.")
+        try:
+            n = notify_new_assignment(res.data[0]["id"])
+            if n:
+                st.info(f"Notified {n} parent(s).")
+        except Exception as e:
+            st.warning(f"Assignment saved, but the email failed: {e}")
+    
+    
 
 st.subheader("Upcoming assignments")
 rows = (

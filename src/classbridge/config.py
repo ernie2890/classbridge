@@ -16,3 +16,7 @@ SUPABASE_ANON_KEY = _require("SUPABASE_ANON_KEY")
 
 # Only needed by backend code (notifications). Never import this in page files.
 SUPABASE_SERVICE_KEY = os.getenv("SUPABASE_SERVICE_KEY")
+
+GMAIL_ADDRESS = os.getenv("GMAIL_ADDRESS")
+GMAIL_APP_PASSWORD = os.getenv("GMAIL_APP_PASSWORD")
+TEST_RECIPIENT = os.getenv("TEST_RECIPIENT")

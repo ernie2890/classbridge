@@ -35,8 +35,8 @@
 - [x] List this week's assignments
 
 ## Step 6: Parent page
-- [ ] Parent login
-- [ ] Upcoming homework list by due date
+- [x] Parent login
+- [x] Upcoming homework list by due date
 
 ## Step 7: Email notifications
 - [ ] Gmail app password in .env
